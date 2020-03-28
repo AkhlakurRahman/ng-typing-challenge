@@ -1,0 +1,29 @@
+.typing-container {
+  width: 50rem;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background-color: #f8f8ff;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
+.typing-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.typing-container p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.typing-container h3 {
+  font-size: 1.8rem;
+  color: green;
+  margin-top: 2rem;
+}
