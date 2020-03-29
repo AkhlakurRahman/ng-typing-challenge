@@ -1,6 +1,21 @@
 <div class="typing-container">
   <h1>Typing Challenge</h1>
-  <p>Text to be displayed</p>
-  <input type="text" />
-  <h3>Success</h3>
+
+  <p>
+    <span
+      [class]="classComparison(letter, enteredText[i])"
+      *ngFor="let letter of randomParagraph.split(''); let i = index"
+      >{{ letter }}</span
+    >
+  </p>
+
+  <textarea
+    name="type"
+    rows="5"
+    (input)="onInputChange($event.target.value)"
+  ></textarea>
+
+  <div *ngIf="randomParagraph === enteredText">
+    <h3>Success</h3>
+  </div>
 </div>
